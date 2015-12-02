@@ -36,7 +36,15 @@ var drawControl = new L.Control.Draw({
 });
 
 map.addControl(drawControl);
+
+var markers = [];
+var polygon = null;
 map.on('draw:created', function (e) {
+
+    // remove markers and polygon from the last run
+    $.each (markers, function (i) { map.removeLayer(markers[i]) });
+    if (polygon != null) map.removeLayer (polygon);
+
     var latLngs = $.map(e.layer.getLatLngs(), function(o) {
         return { name: "points", value: o.lat + "," + o.lng };
     });
@@ -52,10 +60,12 @@ map.on('draw:created', function (e) {
                 var markerLocation = new L.LatLng(data[idx].geo.lat, data[idx].geo.lng);
                 var marker = new L.Marker(markerLocation);
                 map.addLayer(marker);
+                markers.push(marker);
             });
         }
     });
 
+    polygon = e.layer;
     map.addLayer(e.layer);
 });
 });
