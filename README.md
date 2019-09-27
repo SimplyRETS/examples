@@ -1,30 +1,34 @@
 # SimplyRETS API Examples
 
 A collection of examples showcasing usage of the SimplyRETS API.
+SimplyRETS makes it easy to **build software using data from your
+MLS** or REALTORS association by normalizing any **RETS**, **IDX**,
+or **RESO WebAPI** feed into a [standardized JSON API made for real estate](https://docs.simplyrets.com).
+
+_NOTE: Looking for something plug-and-play? Check out the
+[SimplyRETS WordPress plugin](https://wordpress.org/plugins/simply-rets/)_
 
 ## Getting Started
 
-All examples are self-contained
+The SimplyRETS API makes it easy to access your MLS's listing data from
+with any programming language. Below you'll find examples for getting started
+with some of the most common languages - if you don't see what you're looking
+for, [send us a message](https://simplyrets.com/#home-contact) and we'll be
+happy to help get you going.
 
-From the command line:
+- [PHP](php/)
+- [Ruby](ruby/)
+- [JavaScript (node)](javascript/)
+- [JavaScript (ajax) - interactive map search](interactive-map-search/)
 
-    $ chromium ./interactive-map-search/index.html`
+## Interactive map search
 
-If you want to serve an example, you can use
+The [interactive-map-search](interactive-map-search/) directory contains an
+example program for building a map-based search tool using Ajax, Leaflet,
+and OpenStreetMap. The test data is located in Houston.
 
-For example, to serve the `interactive-map-search` example, you can:
-
-    $ ruby -run -ehttpd interactive-map-search/ -p8000
-
-_The example above requires Ruby 1.9.2+_
-
-Then, simply type `localhost:8000` in your browser.
-
-## Interactive Map Search
-
-The directory `interactive-map-search` uses Leaflet, OpenStreetMap,
-and jQuery to allow interactively searching a map. The test data is
-located in Houston.
+To run this example, download [`interactive-map-search/index.html`](interactive-map-search/index.html)
+and open it in your browser, or [visit the live version here](https://simplyrets.github.io/examples/interactive-map-search)
 
 ## More resources
 
@@ -32,6 +36,6 @@ The SimplyRETS API can be accessed from and tool or language that can
 make HTTP requests. Use the examples in this repo to get started, or
 check out some of the other resources and documentation:
 
-- [Static docs and cURL examples](https://docs.simplyrets.com)
+- [API documentation and help topics](https://docs.simplyrets.com)
 - [Interactive API documentation](https://docs.simplyrets.com/api/index.html)
 - [Code snippets](https://simplyrets.com/#curl)
