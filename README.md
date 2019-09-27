@@ -18,7 +18,7 @@ happy to help get you going.
 
 - [PHP](php/)
 - [Ruby](ruby/)
-- [JavaScript (node)](javascript/)
+- [JavaScript (ajax)](javascript/)
 - [JavaScript (ajax) - interactive map search](interactive-map-search/)
 
 ## Interactive map search
