@@ -3,7 +3,8 @@
  */
 
 
-// There are your API Credentials - they get base64 encoded
+// These are your API Credentials - base64 encode them in the
+// `Authorization` header.
 var auth = btoa("simplyrets:simplyrets");
 
 function main() {
