@@ -18,17 +18,6 @@ happy to help get you going.
 
 - [PHP](php/)
 - [Ruby](ruby/)
-- [JavaScript (ajax)](javascript/)
-- [JavaScript (ajax) - interactive map search](interactive-map-search/)
-
-## Interactive map search
-
-The [interactive-map-search](interactive-map-search/) directory contains an
-example program for building a map-based search tool using Ajax, Leaflet,
-and OpenStreetMap. The test data is located in Houston.
-
-To run this example, download [`interactive-map-search/index.html`](interactive-map-search/index.html)
-and open it in your browser, or [visit the live version here](https://simplyrets.github.io/examples/interactive-map-search)
 
 ## More resources
 
@@ -37,5 +26,5 @@ make HTTP requests. Use the examples in this repo to get started, or
 check out some of the other resources and documentation:
 
 - [API documentation and help topics](https://docs.simplyrets.com)
-- [Interactive API documentation](https://docs.simplyrets.com/api/index.html)
+- [Interactive API documentation](https://docs.simplyrets.com/api)
 - [Code snippets](https://simplyrets.com/#curl)
